@@ -1,0 +1,20 @@
+<form autocomplete="on" (submit)="submitData()">
+<div >
+  <h1 [class.demo]="true">
+  {{demo}}
+</h1>
+<ng-Content></ng-Content>
+<input type="text" name="name" [(ngModel)]="data" autocomplete="on"  />
+Enter Mail: <input name="email" type="email"  />
+<!-- <p *ngIf="data%2==0; else login">{{data}}</p>
+<p #demotext >{{data}} Pankaj</p>
+<p>{{demotext.textContent}}</p>
+   <ng-template #login>Please login to continue.</ng-template>   -->
+<input type="button" value="CalFun" (click)="callFun()"/>
+<input type="submit" value="Submit" />
+<!--<app-details [extra12]="data" (emailregister)="getData($event)">ke name hai tera</app-details> -->
+</div>
+<br/>
+<br/>
+<app-list></app-list>
+</form>
